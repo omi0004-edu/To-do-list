@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#div1{
+    border-radius: 50px;
+    background: #001220;
+    box-shadow:  20px 20px 60px #000f1b,
+                 -20px -20px 60px #001525;
+             position: absolute;
+             top: 20%;
+             left: 25%;
+             right: 25%;
+    padding: 50px;
+    
+}
+body{
+    background-image: url('images/circle-scatter-haikei.png');
+    background-size: cover;
+    color: white;
+}
+h1{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+#Listentry::placeholder{
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:#001220 ;
+    border-radius: 25px;
+    padding-left: 20px;
+    margin-bottom:25px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size:16px;
+    margin-top: 30px;
+    color: #fff;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #A7233A;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    margin-top: 30px;
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding:12px 8px 12px 50px;
+    user-select: none; 
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/noun-radio-button-unselected-1299445.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ul li.checked{
+    color: whitesmoke;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(images/96742059-check-mark-icon-white-icon-with-shadow-on-transparent-background.png);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span::hover{
+    background-color: #044e87;
+}
