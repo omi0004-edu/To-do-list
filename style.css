@@ -67,6 +67,7 @@ ul li{
     user-select: none; 
     cursor: pointer;
     position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 ul li::before{
     content: '';
